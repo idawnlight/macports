@@ -1,0 +1,13 @@
+--- dirmngr/server.c.orig	2022-10-07 21:23:50
++++ dirmngr/server.c	2022-10-17 16:12:44
+@@ -3137,8 +3137,10 @@
+                ctrl->refcount);
+   else
+     {
++#if USE_LDAP
+       ks_ldap_free_state (ctrl->ks_get_state);
+       ctrl->ks_get_state = NULL;
++#endif
+       release_ctrl_ocsp_certs (ctrl);
+       xfree (ctrl->server_local);
+       dirmngr_deinit_default_ctrl (ctrl);

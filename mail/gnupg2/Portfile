@@ -56,6 +56,11 @@ platform darwin {
     }
 }
 
+# Fixes a build failure without ldap.
+# Committed upstream, will be in the next release.
+# https://dev.gnupg.org/T6239
+patchfiles          build-without-ldap.diff
+
 depends_build       port:gettext \
                     port:pkgconfig
 
