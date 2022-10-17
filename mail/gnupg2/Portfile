@@ -4,14 +4,14 @@ PortSystem          1.0
 
 set my_name         gnupg
 name                ${my_name}2
-version             2.3.7
+version             2.3.8
 revision            0
 
 # Putting the SHA1 hash because that is published on the website
-checksums           rmd160  9dd90e7a8a57eb7b31ad0a3be2e40207c540bc2f \
-                    sha1    9255a70a984bfbfa5312a9a52a1cf47cb0d1fc84 \
-                    sha256  ee163a5fb9ec99ffc1b18e65faef8d086800c5713d15a672ab57d3799da83669 \
-                    size    7599853
+checksums           rmd160  2520856047bc5bf9b54455cb215543ad1239cea1 \
+                    sha1    1f31b7b4c9c9adad97f94ea3acf1aa64c0424bcc \
+                    sha256  540b7a40e57da261fb10ef521a282e0021532a80fd023e75fb71757e8a4969ed \
+                    size    7644926
 
 # https://trac.macports.org/ticket/63552
 epoch               1
